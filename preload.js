@@ -1,6 +1,5 @@
-// preload.js — safe bridge (exposes minimal API)
 const { contextBridge } = require('electron');
 
-contextBridge.exposeInMainWorld('privateAPI', {
-  hello: () => 'private-electron-browser'
+contextBridge.exposeInMainWorld('api', {
+  // Can expose minimal functions if needed
 });
