@@ -1,0 +1,14 @@
+{
+  "name": "private-electron-browser",
+  "version": "0.1.0",
+  "description": "Self-contained private browser (Electron). Ephemeral session, clears data on exit. No external VPN required.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "You",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
