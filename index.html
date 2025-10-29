@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Private Browser</title>
+    <style>
+      :root { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+      body { margin: 0; height:100vh; display:flex; flex-direction:column; }
+      #toolbar { display:flex; gap:8px; padding:8px; background:#f3f3f3; align-items:center; }
+      #url { flex:1; padding:6px 8px; font-size:14px; border:1px solid #ccc; border-radius:4px; }
+      button { padding:6px 10px; }
+      #web { flex:1; border:0; }
+    </style>
+  </head>
+  <body>
+    <div id="toolbar">
+      <button id="back" title="Back">◀</button>
+      <button id="forward" title="Forward">▶</button>
+      <input id="url" placeholder="https://example.com" />
+      <button id="go">Go</button>
+      <button id="clear">Clear & Quit</button>
+    </div>
+    <iframe id="web" sandbox="allow-scripts allow-forms allow-same-origin" src="https://example.com"></iframe>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
